@@ -1,24 +1,46 @@
 <html>
-    <head>
-        <title>Tip Calculating Machine</title>
-    </head>
-    <body>
-        <section>
-          <div class = "content" id = "form">
-              <form id="myform">
-                <h4>Bill?</h4>
-                <h4>How many eaters?</h4>
-                <h4>Satisfaction Rating: Please Choose One</h4>
-                <select id = "satisfaction">
+<head>
+  <title>Tip Calculator</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <div id="front" class="calculator">
+    <div class="title">
+    <h2> Tip Calculator <h2>
+  </div>
+  <div class = "content" id = "form">
+    <form id="myform">
+      <h4> How much did you spend?</h4>
+      <input type="text" id="total"      placeholder = "$">
 
-                </select>
-              </form>
-          </div>
-          <!-- for buttonss -->
-          
-        </section>
-        <!-- for javascript link -->
-    </body>
+      <h4> How many people are paying?</h4>
+      <input type="number" id="quantity" min="1" max="10">
+
+      <h4> How satisfied were you?</h4>
+      <select id = "satisfaction">
+        <option value=".3">Blown Away - 30%</option>
+        <option value=".2">Very Satisfied - 20%</option>
+        <option value=".15">Satisfied- 15%</option>
+        <option value=".1">Dissatisfied - 10%</option>
+      </select>
+    </form>
+  </div>
+  <div class = "footer">
+    <button onclick="calculateTip()"> Calculate Tip</button>
+  </div>
+  </div>
+
+  <div id="back" class="calculator">
+    <div class = "title">
+      <h2> Tip Calculator </h2>
+    </div>
+    <div class= "content">
+      <p id="tip"></p>
+    </div>
+    <div class="footer">
+      <button onclick="back()"> Calculate Another Tip</button>
+    </div>
+  </div>
+  <script src='scripts.js'></script>
+</body>
 </html>
-
-
