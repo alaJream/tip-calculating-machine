@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+}
+
+.calculator {
+    margin: auto;
+    width: 50%;
+    background-color: white;
+} 
+
+.title {
+    text-align: center;
+    background-color: #3240bb;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    background-color: #555555;
+}
+
+button {
+    background-color: #555555;
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+h4 {
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.content input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: white;
+    height: 50px;
+}
+
+.content input:focus {
+    background-color: white;
+}
+
+.content select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    background: white;
+    height: 50px;
+    border-radius: 0;
+}
+
+.content {
+    padding: 5px;
+    margin: 0px;
+    height: 280px;
+}
+
+#back {
+    display: none;
+}
+
+#front {
+    display: none;
+}
